@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/exercicios/animacao_implicita/animacao_implicita.dart';
 import 'package:flutter_playground/exercicios/mockup_money/mockup_money.dart';
 import 'package:flutter_playground/exercicios/tinder_mockup/mockup_tinder.dart';
 
@@ -40,6 +41,17 @@ class _HomeState extends State<Home> {
                 );
               },
               child: const Text('Tinder Mockup'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AnimacaoImplicita(),
+                  ),
+                );
+              },
+              child: const Text('Animações Implícitas'),
             )
           ],
         ),
