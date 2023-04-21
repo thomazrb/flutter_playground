@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AnimacaoImplicita extends StatefulWidget {
-  const AnimacaoImplicita({super.key});
+class AnimacaoImplicita1 extends StatefulWidget {
+  const AnimacaoImplicita1({super.key});
 
   @override
-  State<AnimacaoImplicita> createState() => _AnimacaoImplicitaState();
+  State<AnimacaoImplicita1> createState() => _AnimacaoImplicita1State();
 }
 
-class _AnimacaoImplicitaState extends State<AnimacaoImplicita> {
+class _AnimacaoImplicita1State extends State<AnimacaoImplicita1> {
   bool toggle = true;
   @override
   Widget build(BuildContext context) {
