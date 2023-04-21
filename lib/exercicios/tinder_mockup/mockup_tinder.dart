@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/exercicios/tinder_mockup/components/tinder_button.dart';
 
 class MockupTinder extends StatelessWidget {
   const MockupTinder({super.key});
@@ -24,14 +25,14 @@ class MockupTinder extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                const SizedBox(height: 20),
+                const SizedBox(height: 240),
                 Image.asset(
                   'assets/images/logo_tinder.png',
                   width: 220,
                 ),
                 const SizedBox(height: 30),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  padding: const EdgeInsets.symmetric(horizontal: 35),
                   child: RichText(
                     textAlign: TextAlign.center,
                     text: const TextSpan(
@@ -62,41 +63,31 @@ class MockupTinder extends StatelessWidget {
                         ),
                         TextSpan(text: '.')
                       ],
+                      style: TextStyle(fontSize: 12),
                     ),
                   ),
                 ),
-                const SizedBox(height: 250),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Container(
-                    height: 55,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white, width: 2),
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                    child: Row(
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.only(left: 15),
-                          child: Icon(
-                            Icons.apple,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Expanded(
-                          child: Center(
-                            child: Text(
-                              'SIGN IN WITH APPLE',
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                )
+                const SizedBox(height: 30),
+                const TinderButton(
+                  image: 'assets/images/apple_logo.png',
+                  text: 'SIGN IN WITH APPLE',
+                ),
+                const SizedBox(height: 10),
+                const TinderButton(
+                  image: 'assets/images/facebook_logo.png',
+                  text: 'SIGN IN WITH FACEBOOK',
+                ),
+                const SizedBox(height: 10),
+                const TinderButton(
+                  image: 'assets/images/ballon.png',
+                  text: 'SIGN IN WITH PHONE NUMBER',
+                ),
+                const SizedBox(height: 30),
+                const Text(
+                  'Trouble Signing In?',
+                  style: TextStyle(color: Colors.white),
+                ),
+                const SizedBox(height: 30),
               ],
             ),
           ),
