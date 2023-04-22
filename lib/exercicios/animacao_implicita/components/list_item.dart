@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 
 class ListItem extends StatefulWidget {
   final String title;
+  final String image;
   final String text;
-  const ListItem({super.key, required this.title, required this.text});
+  const ListItem(
+      {super.key,
+      required this.title,
+      required this.image,
+      required this.text});
 
   @override
   State<ListItem> createState() => _ListItemState();
@@ -15,19 +20,19 @@ class _ListItemState extends State<ListItem> {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Padding(
-        padding: const EdgeInsets.all(15.0),
-        child: InkWell(
-          onTap: () {
-            setState(() {
-              toggle = !toggle;
-              if (toggle) {
-                turns = turns + 1 / 2;
-              } else {
-                turns = turns - 1 / 2;
-              }
-            });
-          },
+      InkWell(
+        onTap: () {
+          setState(() {
+            toggle = !toggle;
+            if (toggle) {
+              turns = turns + 1 / 2;
+            } else {
+              turns = turns - 1 / 2;
+            }
+          });
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -56,7 +61,7 @@ class _ListItemState extends State<ListItem> {
           child: Column(
             children: [
               Image.asset(
-                'assets/images/flutter_logo.png',
+                widget.image,
                 width: 50,
               ),
               Text(

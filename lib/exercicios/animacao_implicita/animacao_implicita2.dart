@@ -19,24 +19,116 @@ class _AnimacaoImplicita2State extends State<AnimacaoImplicita2> {
         ),
         body: ListView(
           children: [
-            ListItem(title: 'My expansion tile 0', text: text),
-            ListItem(title: 'My expansion tile 1', text: text),
-            ListItem(title: 'My expansion tile 2', text: text),
-            ListItem(title: 'My expansion tile 3', text: text),
-            ListItem(title: 'My expansion tile 4', text: text),
-            ListItem(title: 'My expansion tile 5', text: text),
-            ListItem(title: 'My expansion tile 6', text: text),
-            ListItem(title: 'My expansion tile 7', text: text),
-            ListItem(title: 'My expansion tile 8', text: text),
-            ListItem(title: 'My expansion tile 9', text: text),
-            ListItem(title: 'My expansion tile 10', text: text),
-            ListItem(title: 'My expansion tile 11', text: text),
-            ListItem(title: 'My expansion tile 12', text: text),
-            ListItem(title: 'My expansion tile 13', text: text),
-            ListItem(title: 'My expansion tile 14', text: text),
-            ListItem(title: 'My expansion tile 15', text: text),
-            ListItem(title: 'My expansion tile 16', text: text),
-            ListItem(title: 'My expansion tile 17', text: text),
+            ListItem(
+              title: 'My expansion tile 0',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 1',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 2',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 3',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 4',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 5',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 6',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 7',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 8',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 9',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 10',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 11',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 12',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 13',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 14',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 15',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 16',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 17',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 18',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 19',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 20',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
+            ListItem(
+              title: 'My expansion tile 21',
+              image: 'assets/images/flutter_logo.png',
+              text: text,
+            ),
           ],
         ));
   }
