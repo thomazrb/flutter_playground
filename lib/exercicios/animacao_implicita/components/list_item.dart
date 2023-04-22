@@ -17,7 +17,7 @@ class _ListItemState extends State<ListItem> {
     return Column(children: [
       Padding(
         padding: const EdgeInsets.all(15.0),
-        child: GestureDetector(
+        child: InkWell(
           onTap: () {
             setState(() {
               toggle = !toggle;
@@ -48,13 +48,11 @@ class _ListItemState extends State<ListItem> {
           ),
         ),
       ),
-      AnimatedAlign(
-        alignment: Alignment.bottomCenter,
-        duration: const Duration(milliseconds: 200),
-        heightFactor: toggle ? 0 : 1,
-        child: AnimatedOpacity(
-          opacity: toggle ? 0 : 1,
+      ClipRect(
+        child: AnimatedAlign(
+          alignment: Alignment.bottomCenter,
           duration: const Duration(milliseconds: 200),
+          heightFactor: toggle ? 0 : 1,
           child: Column(
             children: [
               Image.asset(
