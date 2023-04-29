@@ -20,7 +20,7 @@ class _AnimacaoControlada1State extends State<AnimacaoControlada1>
     );
 
     animationController.addListener(() {
-      print(animationController.value);
+      setState(() {});
     });
   }
 
@@ -42,9 +42,9 @@ class _AnimacaoControlada1State extends State<AnimacaoControlada1>
         .value;
     final radius =
         Tween(begin: 0.0, end: 35.0).animate(animationController).value;
-    final alignment = animationController.status == AnimationStatus.completed
-        ? Alignment.bottomRight
-        : Alignment.topCenter;
+    final alignment =
+        Tween(begin: Alignment.topCenter, end: Alignment.bottomRight)
+            .animate(animationController);
 
     return Scaffold(
       appBar: AppBar(
@@ -60,7 +60,7 @@ class _AnimacaoControlada1State extends State<AnimacaoControlada1>
               animationController.forward();
             }
           },
-          child: Align(
+          child: AlignTransition(
             alignment: alignment,
             child: Container(
               width: width,

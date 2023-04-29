@@ -24,56 +24,46 @@ class _HomeState extends State<Home> {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const MockupMoney(),
-                  ),
+                final route = MaterialPageRoute(
+                  builder: (context) => const MockupMoney(),
                 );
+                Navigator.push(context, route);
               },
               child: const Text('Money Mockup'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const MockupTinder(),
-                  ),
+                final route = MaterialPageRoute(
+                  builder: (context) => const MockupTinder(),
                 );
+                Navigator.push(context, route);
               },
               child: const Text('Tinder Mockup'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const AnimacaoImplicita1(),
-                  ),
+                final route = MaterialPageRoute(
+                  builder: (context) => const AnimacaoImplicita1(),
                 );
+                Navigator.push(context, route);
               },
               child: const Text('Animações Implícitas 1'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const AnimacaoImplicita2(),
-                  ),
+                final route = MaterialPageRoute(
+                  builder: (context) => const AnimacaoImplicita2(),
                 );
+                Navigator.push(context, route);
               },
               child: const Text('Animações Implícitas 2'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const AnimacaoControlada1(),
-                  ),
+                final route = MaterialPageRoute(
+                  builder: (context) => const AnimacaoControlada1(),
                 );
+                Navigator.push(context, route);
               },
               child: const Text('Animações Controladas 1'),
             )
