@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/exercicios/animacao_controlada/animacao_controlada1.dart';
 import 'package:flutter_playground/exercicios/animacao_implicita/animacao_implicita1.dart';
 import 'package:flutter_playground/exercicios/animacao_implicita/animacao_implicita2.dart';
 import 'package:flutter_playground/exercicios/mockup_money/mockup_money.dart';
@@ -64,6 +65,17 @@ class _HomeState extends State<Home> {
                 );
               },
               child: const Text('Animações Implícitas 2'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AnimacaoControlada1(),
+                  ),
+                );
+              },
+              child: const Text('Animações Controladas 1'),
             )
           ],
         ),
